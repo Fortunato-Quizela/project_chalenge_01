@@ -1,0 +1,117 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+   list-style: none;
+   text-decoration: none;
+   color: #333;
+   font-size: 10pt;
+}
+body{
+   background-color: #f2fff2;
+   display: flex;
+   align-items: center;
+   height: 100vh;
+   justify-content: center;
+   width: 100%;
+}
+.container{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   min-width: 530px;
+   margin-left: 140px;
+}
+.data-input{
+   width: 360px;
+   display: flex;
+   flex-direction: column;
+}
+.group{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #ffffff;
+   width: 100%;
+   padding: 1.3rem 2.6rem;
+   border: 1px solid lightgray;
+   margin: 5px 0;
+}
+.group:nth-child(1) > img{
+   width: 170px;
+   margin: 1.6rem auto;
+}
+.group:nth-child(1) form{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+.group:nth-child(1) form > input{
+   padding: 6px;
+   margin: 0.4rem 0;
+}
+.group:nth-child(1) form > input::placeholder{
+   color: #333;
+   font-size: 9pt;
+}
+.group:nth-child(1) form > input[type='submit']{
+   background: #0095f6;
+   border-radius: 4px;
+   font-weight: bold;
+   border: none;
+   padding: 7px;
+   margin-top: 15px;
+   color: #fff;
+}
+.group:nth-child(1) .split{
+   margin: 10px 0;
+   display: flex;
+   justify-content: center;
+}
+.group:nth-child(1) .split hr{
+   width: 120px;
+   margin-top: 7px;
+   height: 1px;
+   border: none;
+   background: lightgray;
+}
+.group:nth-child(1) .options ul li a{
+   color: #0095f6;;
+   display: block;
+   text-align: center;
+   margin: 10px 0;
+}
+.group:nth-child(2){
+   padding: 1.4rem;
+}
+.group:nth-child(3){
+   align-items: center;
+   background: none;
+   border: none;
+   margin-top: 0;
+}
+.group:nth-child(3) p{
+   margin-bottom: 10px;
+}
+.group:nth-child(3) .logo-links{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+.group:nth-child(3) .logo-links a{
+   margin: 10px 4px;
+}
+.group:nth-child(3) .logo-links a img{
+   height: 2.8rem;
+   width: 10.5rem;
+}
+
+@media screen and (max-width: 900px) {
+   .iphones{
+      display: none;
+   }
+   body{
+      background: #fff;
+   }
+}
